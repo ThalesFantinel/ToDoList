@@ -58,10 +58,20 @@ const deleteOneTask = async (req, res) => {
   }
 };
 
+const cadastro = (req, res) => {
+  return res.render("cadastro");
+}
+
+const login = (req, res) => {
+  return res.render("login");
+}
+
 module.exports = {
   getAllTasks,
   createTask,
   getById,
   updateOneTask,
   deleteOneTask,
+  cadastro,
+  login,
 };
